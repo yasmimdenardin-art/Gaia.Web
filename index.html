@@ -2,14 +2,19 @@
 <html lang="pt-br">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Gaia na Web</title>
 
+
     <style>
 
-        /* CABEÇALHO */
+        /* =========================
+           CABEÇALHO
+        ========================= */
 
         header {
             background-image:
@@ -25,6 +30,7 @@
 
             color: white;
             text-align: center;
+
             padding: 80px 20px;
         }
 
@@ -37,63 +43,151 @@
         }
 
 
-        /* ÁREA DOS POSTS */
+        /* =========================
+           ÁREA DOS POSTS
+        ========================= */
 
         main {
             background-color: #1D3919;
             color: white;
+
             padding: 30px;
+
             min-height: 400px;
         }
 
 
-        /* CADA POST */
+        /* =========================
+           CADA POST
+        ========================= */
 
         .post {
             background-color: #285023;
+
             padding: 25px;
+
             margin-bottom: 30px;
+
             border-radius: 10px;
         }
 
 
-        /* TÍTULOS DOS POSTS */
+        /* TÍTULOS */
 
         h2 {
             font-family: Georgia, serif;
         }
 
 
-        /* IMAGENS DOS POSTS */
+        /* =========================
+           IMAGENS
+        ========================= */
 
         .imagem-post {
+
             width: 100%;
+
             max-width: 500px;
-            height: 350px;
+
+            height: 320px;
+
             object-fit: cover;
+
+            object-position: center;
+
             display: block;
+
             margin: 20px auto;
+
             border-radius: 10px;
+        }
+
+
+        /* =========================
+           ÁREA DOS LIKES
+        ========================= */
+
+        .likes {
+
+            display: flex;
+
+            gap: 8px;
+
+            margin-top: 15px;
         }
 
 
         /* BOTÕES */
 
-        button {
+        .likes button {
+
             background-color: white;
+
             border: none;
+
             border-radius: 8px;
+
             padding: 8px 12px;
-            margin-right: 5px;
+
             cursor: pointer;
+
             font-size: 18px;
+
+            transition: 0.2s;
         }
 
 
         /* EFEITO AO PASSAR O MOUSE */
 
-        button:hover {
+        .likes button:hover {
+
             transform: scale(1.05);
+        }
+
+
+        /* BOTÃO SELECIONADO */
+
+        .likes button.ativo {
+
+            background-color: #BEE6AC;
+
+            transform: scale(1.05);
+        }
+
+
+        /* =========================
+           CELULAR
+        ========================= */
+
+        @media (max-width: 600px) {
+
+            header {
+
+                padding: 60px 15px;
+            }
+
+            h1 {
+
+                font-size: 35px;
+            }
+
+            main {
+
+                padding: 15px;
+            }
+
+            .post {
+
+                padding: 18px;
+            }
+
+            .imagem-post {
+
+                width: 100%;
+
+                height: 250px;
+            }
+
         }
 
     </style>
@@ -104,9 +198,9 @@
 <body>
 
 
-    <!-- ============================= -->
-    <!-- CABEÇALHO -->
-    <!-- ============================= -->
+    <!-- =========================
+         CABEÇALHO
+    ========================= -->
 
     <header>
 
@@ -121,16 +215,16 @@
 
 
 
-    <!-- ============================= -->
-    <!-- POSTS -->
-    <!-- ============================= -->
+    <!-- =========================
+         POSTS
+    ========================= -->
 
     <main>
 
 
-        <!-- ============================= -->
-        <!-- PRIMEIRO POST -->
-        <!-- ============================= -->
+        <!-- =========================
+             PRIMEIRO POST
+        ========================= -->
 
         <div class="post">
 
@@ -151,21 +245,32 @@
             </p>
 
 
-            <button>
-                💗 <span>0</span>
-            </button>
+            <!-- LIKES -->
 
-            <button>
-                💔 <span>0</span>
-            </button>
+            <div class="likes">
+
+                <button class="like">
+
+                    💗 <span>0</span>
+
+                </button>
+
+
+                <button class="deslike">
+
+                    💔 <span>0</span>
+
+                </button>
+
+            </div>
 
         </div>
 
 
 
-        <!-- ============================= -->
-        <!-- SEGUNDO POST -->
-        <!-- ============================= -->
+        <!-- =========================
+             SEGUNDO POST
+        ========================= -->
 
         <div class="post">
 
@@ -207,21 +312,32 @@
             </p>
 
 
-            <button>
-                💗 <span>0</span>
-            </button>
+            <!-- LIKES -->
 
-            <button>
-                💔 <span>0</span>
-            </button>
+            <div class="likes">
+
+                <button class="like">
+
+                    💗 <span>0</span>
+
+                </button>
+
+
+                <button class="deslike">
+
+                    💔 <span>0</span>
+
+                </button>
+
+            </div>
 
         </div>
 
 
 
-        <!-- ============================= -->
-        <!-- TERCEIRO POST -->
-        <!-- ============================= -->
+        <!-- =========================
+             TERCEIRO POST
+        ========================= -->
 
         <div class="post">
 
@@ -259,21 +375,32 @@
             </p>
 
 
-            <button>
-                💗 <span>0</span>
-            </button>
+            <!-- LIKES -->
 
-            <button>
-                💔 <span>0</span>
-            </button>
+            <div class="likes">
+
+                <button class="like">
+
+                    💗 <span>0</span>
+
+                </button>
+
+
+                <button class="deslike">
+
+                    💔 <span>0</span>
+
+                </button>
+
+            </div>
 
         </div>
 
 
 
-        <!-- ============================= -->
-        <!-- QUARTO POST -->
-        <!-- ============================= -->
+        <!-- =========================
+             QUARTO POST
+        ========================= -->
 
         <div class="post">
 
@@ -293,14 +420,13 @@
 
             <p>
                 <strong>
-                    O Brasil é um dos maiores produtores de Resíduos  do mundo
+                    Cada árvore adulta pode absorver até 150 kg de CO₂
+                    por ano.
                 </strong>
             </p>
 
             <p>
-
-                
-O Brasil gera cerca de 80 milhões de toneladas de resíduos sólidos por ano, mas recicla apenas 4%. A Política Nacional de Resíduos Sólidos estabelece metas para melhorar esse cenário, mas a participação da população é essencial para o sucesso da reciclagem e da coleta seletiva., <strong>as árvores ajudam
+                Além de produzirem oxigênio, <strong>as árvores ajudam
                 a combater as mudanças climáticas</strong> ao capturar
                 o dióxido de carbono da atmosfera.
             </p>
@@ -311,13 +437,24 @@ O Brasil gera cerca de 80 milhões de toneladas de resíduos sólidos por ano, m
             </p>
 
 
-            <button>
-                💗 <span>0</span>
-            </button>
+            <!-- LIKES -->
 
-            <button>
-                💔 <span>0</span>
-            </button>
+            <div class="likes">
+
+                <button class="like">
+
+                    💗 <span>0</span>
+
+                </button>
+
+
+                <button class="deslike">
+
+                    💔 <span>0</span>
+
+                </button>
+
+            </div>
 
         </div>
 
@@ -326,22 +463,98 @@ O Brasil gera cerca de 80 milhões de toneladas de resíduos sólidos por ano, m
 
 
 
-    <!-- ============================= -->
-    <!-- JAVASCRIPT DAS CURTIDAS -->
-    <!-- ============================= -->
+    <!-- =========================
+         JAVASCRIPT
+         SISTEMA DE LIKE/DESLIKE
+    ========================= -->
 
     <script>
 
-        const botoes = document.querySelectorAll("button");
+        const posts = document.querySelectorAll(".post");
 
-        botoes.forEach(function(botao) {
 
-            botao.addEventListener("click", function() {
+        posts.forEach(function(post) {
 
-                let texto = botao.querySelector("span");
+            const like = post.querySelector(".like");
 
-                texto.textContent =
-                    Number(texto.textContent) + 1;
+            const deslike = post.querySelector(".deslike");
+
+
+            const numeroLike =
+                like.querySelector("span");
+
+            const numeroDeslike =
+                deslike.querySelector("span");
+
+
+            /* =========================
+               LIKE
+            ========================= */
+
+            like.addEventListener("click", function() {
+
+                if (like.classList.contains("ativo")) {
+
+                    /* Retira o like */
+
+                    like.classList.remove("ativo");
+
+                    numeroLike.textContent = "0";
+
+                }
+
+                else {
+
+                    /* Coloca o like */
+
+                    like.classList.add("ativo");
+
+                    numeroLike.textContent = "1";
+
+
+                    /* Retira o deslike */
+
+                    deslike.classList.remove("ativo");
+
+                    numeroDeslike.textContent = "0";
+
+                }
+
+            });
+
+
+            /* =========================
+               DESLIKE
+            ========================= */
+
+            deslike.addEventListener("click", function() {
+
+                if (deslike.classList.contains("ativo")) {
+
+                    /* Retira o deslike */
+
+                    deslike.classList.remove("ativo");
+
+                    numeroDeslike.textContent = "0";
+
+                }
+
+                else {
+
+                    /* Coloca o deslike */
+
+                    deslike.classList.add("ativo");
+
+                    numeroDeslike.textContent = "1";
+
+
+                    /* Retira o like */
+
+                    like.classList.remove("ativo");
+
+                    numeroLike.textContent = "0";
+
+                }
 
             });
 
