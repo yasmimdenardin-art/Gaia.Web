@@ -72,7 +72,7 @@
         }
 
 
-        /* TÍTULOS */
+        /* TÍTULOS DOS POSTS */
 
         h2 {
             font-family: Georgia, serif;
@@ -80,18 +80,18 @@
 
 
         /* =========================
-           IMAGENS
+           IMAGENS DOS POSTS
         ========================= */
 
         .imagem-post {
 
             width: 100%;
 
-            max-width: 500px;
+            max-width: 700px;
 
-            height: 320px;
+            height: 400px;
 
-            object-fit: cover;
+            object-fit: contain;
 
             object-position: center;
 
@@ -100,6 +100,8 @@
             margin: 20px auto;
 
             border-radius: 10px;
+
+            background-color: #1D3919;
         }
 
 
@@ -166,26 +168,32 @@
                 padding: 60px 15px;
             }
 
+
             h1 {
 
                 font-size: 35px;
             }
+
 
             main {
 
                 padding: 15px;
             }
 
+
             .post {
 
                 padding: 18px;
             }
 
+
             .imagem-post {
 
                 width: 100%;
 
-                height: 250px;
+                height: 280px;
+
+                object-fit: contain;
             }
 
         }
@@ -245,21 +253,14 @@
             </p>
 
 
-            <!-- LIKES -->
-
             <div class="likes">
 
                 <button class="like">
-
                     💗 <span>0</span>
-
                 </button>
 
-
                 <button class="deslike">
-
                     💔 <span>0</span>
-
                 </button>
 
             </div>
@@ -312,21 +313,14 @@
             </p>
 
 
-            <!-- LIKES -->
-
             <div class="likes">
 
                 <button class="like">
-
                     💗 <span>0</span>
-
                 </button>
 
-
                 <button class="deslike">
-
                     💔 <span>0</span>
-
                 </button>
 
             </div>
@@ -375,21 +369,14 @@
             </p>
 
 
-            <!-- LIKES -->
-
             <div class="likes">
 
                 <button class="like">
-
                     💗 <span>0</span>
-
                 </button>
 
-
                 <button class="deslike">
-
                     💔 <span>0</span>
-
                 </button>
 
             </div>
@@ -437,21 +424,14 @@
             </p>
 
 
-            <!-- LIKES -->
-
             <div class="likes">
 
                 <button class="like">
-
                     💗 <span>0</span>
-
                 </button>
 
-
                 <button class="deslike">
-
                     💔 <span>0</span>
-
                 </button>
 
             </div>
@@ -465,7 +445,7 @@
 
     <!-- =========================
          JAVASCRIPT
-         SISTEMA DE LIKE/DESLIKE
+         LIKE E DESLIKE
     ========================= -->
 
     <script>
@@ -488,7 +468,7 @@
 
 
             /* =========================
-               LIKE
+               BOTÃO LIKE
             ========================= */
 
             like.addEventListener("click", function() {
@@ -501,11 +481,9 @@
 
                     numeroLike.textContent = "0";
 
-                }
+                } else {
 
-                else {
-
-                    /* Coloca o like */
+                    /* Adiciona o like */
 
                     like.classList.add("ativo");
 
@@ -524,7 +502,7 @@
 
 
             /* =========================
-               DESLIKE
+               BOTÃO DESLIKE
             ========================= */
 
             deslike.addEventListener("click", function() {
@@ -537,11 +515,9 @@
 
                     numeroDeslike.textContent = "0";
 
-                }
+                } else {
 
-                else {
-
-                    /* Coloca o deslike */
+                    /* Adiciona o deslike */
 
                     deslike.classList.add("ativo");
 
