@@ -10,6 +10,7 @@
     <style>
 
         /* CABEÇALHO */
+
         header {
             background-image:
                 linear-gradient(
@@ -29,6 +30,7 @@
 
 
         /* TÍTULO PRINCIPAL */
+
         h1 {
             font-family: Georgia, serif;
             font-size: 45px;
@@ -36,6 +38,7 @@
 
 
         /* ÁREA DOS POSTS */
+
         main {
             background-color: #1D3919;
             color: white;
@@ -45,6 +48,7 @@
 
 
         /* CADA POST */
+
         .post {
             background-color: #285023;
             padding: 25px;
@@ -54,12 +58,14 @@
 
 
         /* TÍTULOS DOS POSTS */
+
         h2 {
             font-family: Georgia, serif;
         }
 
 
         /* IMAGENS DOS POSTS */
+
         .imagem-post {
             width: 100%;
             max-width: 500px;
@@ -71,7 +77,8 @@
         }
 
 
-        /* BOTÕES DE CURTIDA */
+        /* BOTÕES */
+
         button {
             background-color: white;
             border: none;
@@ -83,7 +90,8 @@
         }
 
 
-        /* EFEITO DO BOTÃO */
+        /* EFEITO AO PASSAR O MOUSE */
+
         button:hover {
             transform: scale(1.05);
         }
@@ -96,7 +104,9 @@
 <body>
 
 
+    <!-- ============================= -->
     <!-- CABEÇALHO -->
+    <!-- ============================= -->
 
     <header>
 
@@ -111,14 +121,16 @@
 
 
 
-    <!-- ÁREA PRINCIPAL -->
+    <!-- ============================= -->
+    <!-- POSTS -->
+    <!-- ============================= -->
 
     <main>
 
 
-        <!-- ==================== -->
+        <!-- ============================= -->
         <!-- PRIMEIRO POST -->
-        <!-- ==================== -->
+        <!-- ============================= -->
 
         <div class="post">
 
@@ -151,9 +163,9 @@
 
 
 
-        <!-- ==================== -->
+        <!-- ============================= -->
         <!-- SEGUNDO POST -->
-        <!-- ==================== -->
+        <!-- ============================= -->
 
         <div class="post">
 
@@ -207,9 +219,9 @@
 
 
 
-        <!-- ==================== -->
+        <!-- ============================= -->
         <!-- TERCEIRO POST -->
-        <!-- ==================== -->
+        <!-- ============================= -->
 
         <div class="post">
 
@@ -258,11 +270,64 @@
         </div>
 
 
+
+        <!-- ============================= -->
+        <!-- QUARTO POST -->
+        <!-- ============================= -->
+
+        <div class="post">
+
+            <h2>Quarto post</h2>
+
+            <p>
+                Por: Yasmim Denardin
+            </p>
+
+
+            <img
+                class="imagem-post"
+                src="arvore.jpg"
+                alt="Ilustração de um oceano cercado por resíduos plásticos, com um animal marinho ao centro"
+            >
+
+
+            <p>
+                <strong>
+                    Cada árvore adulta pode absorver até 150 kg de CO₂
+                    por ano.
+                </strong>
+            </p>
+
+            <p>
+                Além de produzirem oxigênio, <strong>as árvores ajudam
+                a combater as mudanças climáticas</strong> ao capturar
+                o dióxido de carbono da atmosfera.
+            </p>
+
+            <p>
+                Plantar e preservar áreas verdes é uma das maneiras
+                mais eficazes de contribuir para um futuro sustentável.
+            </p>
+
+
+            <button>
+                💗 <span>0</span>
+            </button>
+
+            <button>
+                💔 <span>0</span>
+            </button>
+
+        </div>
+
+
     </main>
 
 
 
+    <!-- ============================= -->
     <!-- JAVASCRIPT DAS CURTIDAS -->
+    <!-- ============================= -->
 
     <script>
 
