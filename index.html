@@ -33,6 +33,13 @@
             min-height: 400px;
         }
 
+        .post {
+            background-color: #285023;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+        }
+
         button {
             background-color: white;
             border: none;
@@ -60,29 +67,62 @@
 
     <main>
 
-        <h2>Primeiro post</h2>
+        <!-- PRIMEIRO POST -->
+        <div class="post">
 
-        <p>Por: Yasmim Denardin</p>
+            <h2>Primeiro post</h2>
 
-        <p>
-            Qual é o significado do nome?
+            <p>Por: Yasmim Denardin</p>
 
-            Sendo uma grande fã de Percy Jackson e mitologia grega,
-            escolhi Gaia por ser considerada a mãe Terra, Deusa primordial
-            e responsável pela origem dos seres vivos.
-        </p>
+            <p>
+                Qual é o significado do nome?
 
-        <button>
-            💗 <span>0</span>
-        </button>
+                Sendo uma grande fã de Percy Jackson e mitologia grega,
+                escolhi Gaia por ser considerada a mãe Terra, Deusa primordial
+                e responsável pela origem dos seres vivos.
+            </p>
 
-        <button>
-            💔 <span>0</span>
-        </button>
+            <button>
+                💗 <span>0</span>
+            </button>
+
+            <button>
+                💔 <span>0</span>
+            </button>
+
+        </div>
+
+
+        <!-- SEGUNDO POST -->
+        <div class="post">
+
+            <h2>Segundo post</h2>
+
+            <p>Por: Yasmim Denardin</p>
+
+            <p>
+                A importância das árvores para o planeta Terra.
+
+                As árvores são fundamentais para a vida, pois ajudam
+                na produção de oxigênio, contribuem para o equilíbrio
+                do clima e servem de abrigo para diversos animais.
+            </p>
+
+            <button>
+                💗 <span>0</span>
+            </button>
+
+            <button>
+                💔 <span>0</span>
+            </button>
+
+        </div>
 
     </main>
 
+
     <script>
+
         const botoes = document.querySelectorAll("button");
 
         botoes.forEach(function(botao) {
@@ -91,11 +131,13 @@
 
                 let texto = botao.querySelector("span");
 
-                texto.textContent = Number(texto.textContent) + 1;
+                texto.textContent =
+                    Number(texto.textContent) + 1;
 
             });
 
         });
+
     </script>
 
 </body>
